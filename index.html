@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Focus Frame for Mac</title>
+  <meta name="description" content="Focus Frame dims everything on your Mac's screen except the part you're working on. One hotkey sets the frame, the same hotkey removes it.">
+  <link rel="icon" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header>
+    <img class="icon" src="icon.png" alt="Focus Frame icon" width="112" height="112">
+    <h1>Focus Frame</h1>
+    <p class="tagline">Dim everything but your work.</p>
+    <!-- SCREENSHOT -->
+  </header>
+
+  <p>Focus Frame is a small menu bar app for macOS that dims everything on your screen except the part
+  you're working on. One hotkey sets the frame, and the same hotkey removes it.</p>
+
+  <h2>Hotkeys</h2>
+  <table class="keys">
+    <tr><td><kbd>⌃</kbd> <kbd>⌥</kbd> <kbd>F</kbd></td>
+        <td>Pick a frame: drag around an area, or click a window. Press again to remove the frame.</td></tr>
+    <tr><td><kbd>⌃</kbd> <kbd>⌥</kbd> <kbd>W</kbd></td>
+        <td>Frame the window you're in. Press again to remove it.</td></tr>
+    <tr><td><kbd>esc</kbd></td>
+        <td>Remove the frame, or cancel picking one.</td></tr>
+  </table>
+  <p class="muted">⌃ is Control and ⌥ is Option. The dim strength, the frame border, Esc and Open at
+  Login are in the menu bar icon's menu.</p>
+
+  <h2>Support</h2>
+  <div class="card">
+    <p style="margin:0">Questions, bugs or ideas? Email
+    <a href="mailto:tommedema@gmail.com?subject=Focus%20Frame">tommedema@gmail.com</a>.
+    Please include your macOS version and what you expected to happen.</p>
+  </div>
+
+  <h3>The menu bar and Dock disappeared</h3>
+  <p>That's the frame doing its job: everything outside it is dimmed, including the menu bar. Press
+  <kbd>esc</kbd> or <kbd>⌃</kbd> <kbd>⌥</kbd> <kbd>F</kbd> to bring everything back. To keep a hint of
+  what's around the frame, lower the Dim slider in the menu.</p>
+
+  <h3>Esc doesn't reach my app while a frame is showing</h3>
+  <p>While a frame is showing, Esc removes it. If you need Esc inside the framed app (in a text editor
+  like Vim, for example), turn off <em>Esc Clears Frame</em> in the menu. ⌃⌥F still removes the frame.</p>
+
+  <h3>The frame disappeared when I minimized the window</h3>
+  <p>When a framed window is minimized, the dim steps aside and comes back with the window. Closing the
+  window removes the frame.</p>
+
+  <h3>How do I stop it from opening at login?</h3>
+  <p>Click the menu bar icon and uncheck <em>Launch at Login</em>.</p>
+
+  <h3>Does it need any permissions?</h3>
+  <p>No. Focus Frame needs neither Accessibility nor Screen Recording access, makes no network
+  connections and collects no data. See the <a href="privacy.html">privacy policy</a>.</p>
+
+  <footer>
+    © 2026 Tom Medema · <a href="privacy.html">Privacy policy</a>
+  </footer>
+</main>
+</body>
+</html>
